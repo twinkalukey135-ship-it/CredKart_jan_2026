@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_Credkart_Login_Excel_002.py:32 Testcase test_Credkart_login_excel_ddt_004 is started
+[32mINFO    [0m root:test_Credkart_Login_Excel_002.py:34 Reading data from excel

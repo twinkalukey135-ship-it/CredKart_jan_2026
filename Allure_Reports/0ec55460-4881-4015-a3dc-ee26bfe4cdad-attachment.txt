@@ -1,0 +1,1872 @@
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 77, in test_Credkart_login_002
+    self.log.info("Testcase test_Credkart_login_002 is started")
+Message: 'Testcase test_Credkart_login_002 is started'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 77, in test_Credkart_login_002
+    self.log.info("Testcase test_Credkart_login_002 is started")
+Message: 'Testcase test_Credkart_login_002 is started'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 79, in test_Credkart_login_002
+    self.log.info(f"Opening browser and getting {self.login_url}")
+Message: 'Opening browser and getting https://automation.credence.in/login'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 79, in test_Credkart_login_002
+    self.log.info(f"Opening browser and getting {self.login_url}")
+Message: 'Opening browser and getting https://automation.credence.in/login'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 88, in test_Credkart_login_002
+    self.log.info(f"Entering the Email {self.email}")
+Message: 'Entering the Email Credencetest@test.com'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 88, in test_Credkart_login_002
+    self.log.info(f"Entering the Email {self.email}")
+Message: 'Entering the Email Credencetest@test.com'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 95, in test_Credkart_login_002
+    self.log.info(f"Entering the password{self.password}")
+Message: 'Entering the passwordCredence@123'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 95, in test_Credkart_login_002
+    self.log.info(f"Entering the password{self.password}")
+Message: 'Entering the passwordCredence@123'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 101, in test_Credkart_login_002
+    self.log.info(f"Clicking on login button")
+Message: 'Clicking on login button'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 101, in test_Credkart_login_002
+    self.log.info(f"Clicking on login button")
+Message: 'Clicking on login button'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 121, in test_Credkart_login_002
+    self.log.info(f"Checking the login status")
+Message: 'Checking the login status'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 121, in test_Credkart_login_002
+    self.log.info(f"Checking the login status")
+Message: 'Checking the login status'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 123, in test_Credkart_login_002
+    self.log.info(f"User login successful and taking screenshot")
+Message: 'User login successful and taking screenshot'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 123, in test_Credkart_login_002
+    self.log.info(f"User login successful and taking screenshot")
+Message: 'User login successful and taking screenshot'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 125, in test_Credkart_login_002
+    self.log.info(f"Clicking on menu button")
+Message: 'Clicking on menu button'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 125, in test_Credkart_login_002
+    self.log.info(f"Clicking on menu button")
+Message: 'Clicking on menu button'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 127, in test_Credkart_login_002
+    self.log.info(f"Clicking on logout button")
+Message: 'Clicking on logout button'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 472, in format
+    return self._format(record)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 468, in _format
+    return self._fmt % values
+           ~~~~~~~~~~^~~~~~~~
+KeyError: 'funName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1150, in emit
+    msg = self.format(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 998, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 714, in format
+    s = self.formatMessage(record)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 683, in formatMessage
+    return self._style.format(record)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 474, in format
+    raise ValueError('Formatting field not found in record: %s' % e)
+ValueError: Formatting field not found in record: 'funName'
+Call stack:
+  File "<string>", line 1, in <module>
+    import sys;exec(eval(sys.stdin.readline()))
+  File "<string>", line 8, in <module>
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1806, in serve
+    WorkerGateway(io=io, id=id, _startcount=2).serve()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1273, in serve
+    self._execpool.integrate_as_primary_thread()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 389, in integrate_as_primary_thread
+    self._perform_spawn(reply)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 411, in _perform_spawn
+    reply.run()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 341, in run
+    self._result = func(*args, **kwargs)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\execnet\gateway_base.py", line 1291, in executetask
+    exec(co, loc)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 427, in <module>
+    config.hook.pytest_cmdline_main(config=config)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 336, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 289, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\main.py", line 343, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 206, in pytest_runtestloop
+    self.run_one_test()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\xdist\remote.py", line 227, in run_one_test
+    self.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pytest_rerunfailures.py", line 565, in pytest_runtest_protocol
+    reports = runtestprotocol(item, nextitem=nextitem, log=False)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 136, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 245, in call_and_report
+    call = CallInfo.from_call(
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 344, in from_call
+    result: TResult | None = func()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 246, in <lambda>
+    lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\runner.py", line 178, in pytest_runtest_call
+    item.runtest()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 1670, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\pluggy\_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\_pytest\python.py", line 156, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+  File "C:\Users\dell\Desktop\Automation#2026\04_Credkart_Pytest_Framework\testCases\test_Credkart_User_Profile_001.py", line 127, in test_Credkart_login_002
+    self.log.info(f"Clicking on logout button")
+Message: 'Clicking on logout button'
+Arguments: ()
